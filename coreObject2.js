@@ -69,5 +69,8 @@
    //lesson 41
    //console.log(Math,PI)
    //console.log(Math.sqrt(81))
-   var random = Math.ceil(Math.random() * 10)
-   console.log(random)
+   /*var random = Math.ceil(Math.random() * 10)
+   console.log(random)*/
+    var n = prompt('Enter a Number', '');
+    var answer = Math.sqrt(n);
+    console.log('the square root of'+n+'is'+answer)

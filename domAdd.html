@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan DOM 1</title>
+</head>
+<body>
+    <!--<div id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odit obcaecati laudantium non veniam vitae dolores, enim maxime cum sapiente dignissimos quis provident explicabo molestias consectetur quasi! Cupiditate, omnis fugit!</div>-->
+    <div id="demo">
+        <p id="p1">This is a paragraf.</p>
+        <p id="p2">This is another paragraf.</p>
+    </div>
+    <script>
+        /*window.onload = function() {
+    //creating a new paragraph
+    var p = document.createElement("p");
+    var node = document.createTextNode("Muhammad Andra");
+    //adding the text to the paragraph
+    p.appendChild(node);
+
+    var div = document.getElementById("demo");
+    //adding the paragraph to the div
+    div.appendChild(p);
+};*/
+    var p = document.createElement("p");
+    var node = document.createTextNode("This is new");
+    p.appendChild(node);
+
+    var parent = document.getElementById("demo");
+    var child = document.getElementById("p1");
+    parent.replaceChild(p,child);
+    </script>
+</body>
+</html>

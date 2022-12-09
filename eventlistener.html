@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <button id="demo">
+        hasil
+    </button>
+    <script>
+        var p = prompt('masukan nilai panjang', '');
+        var l = prompt('masukan nilai lebar', '');
+        var luas = p*l; 
+        window.onload =     
+        function (){
+            var btn = document.getElementById('demo');
+            btn.addEventListener("click", myfunction, true);
+
+            function myfunction(){
+            alert (luas);
+            btn.removeEventListener("click", myfunction, true);    
+            }
+        }
+    </script>
+</body>
+</html>

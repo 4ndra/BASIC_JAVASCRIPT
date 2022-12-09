@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+</head>
+<body>
+    <button onclick="show();">Click Me</button>
+    <button id="demo">Date</button><br>
+    <input type="text" id="name" onchange="change()">
+    <button id="demo">Start</button>
+    <script>
+        function show() {
+    alert("Welcome");
+};
+    window.onload = function() {
+    var x = document.getElementById('demo');
+    x.onclick = function () {
+        document.body.innerHTML = Date(); 
+    }
+};
+    function change() {
+    var x = document.getElementById('name');
+    x.value = x.value.toUpperCase();
+}
+    window.onload = function() {
+    var btn = document.getElementById("demo");
+    btn.addEventListener("click", myFunction);
+
+    function myFunction() {
+        alert(Math.random());
+        btn.removeEventListener("click", myFunction);
+    }
+};
+    </script>
+</body>
+</html>
