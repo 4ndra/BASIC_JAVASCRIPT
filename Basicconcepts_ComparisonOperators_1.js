@@ -1,2 +1,2 @@
-var num = 10;
+var num = 12;
 console.log(num == 8)
