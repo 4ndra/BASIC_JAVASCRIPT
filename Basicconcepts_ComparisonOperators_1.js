@@ -1,2 +1,2 @@
-var num = 12;
-console.log(num == 8)
+var num = 10;
+console.log(num == 8);
